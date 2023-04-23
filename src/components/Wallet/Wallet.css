@@ -1,0 +1,78 @@
+/* Blue color scheme */
+:root {
+    --primary-color: #2196f3;
+    --secondary-color: #64b5f6;
+    --background-color: #f2f2f2;
+  }
+  
+  /* Form styles */
+  .formContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .formPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px var(--secondary-color);
+    background-color: var(--background-color);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .formPanel h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+  .formPanel label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+  }
+  
+  .formPanel input[type="text"],
+  .formPanel input[type="email"],
+  .formPanel input[type="password"],
+  .formPanel select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px var(--secondary-color);
+    font-size: 16px;
+    font-family: inherit;
+  }
+  
+  .formPanel select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath fill='%23BEBEBE' d='M6,6.2L0.7,0.9C0.5,0.7,0.2,0.7,0,0.9C-0.2,1.2-0.2,1.7,0,2L5,6L10,2C10.2,1.7,10.2,1.2,10,0.9C9.8,0.7,9.5,0.7,9.3,0.9L6,4.2L2.7,0.9C2.5,0.7,2.2,0.7,2,0.9C1.8,1.2,1.8,1.7,2,2L6,6.2Z'/%3E%3C/svg%3E") no-repeat;
+    background-position: right 10px center;
+    background-size: 12px 7px;
+    color: #6b6b6b;
+  }
+  
+  .formPanel input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .formPanel input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+  }
+  

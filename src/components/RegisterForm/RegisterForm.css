@@ -1,0 +1,65 @@
+/* Blue color scheme */
+:root {
+    --primary-color: #2196f3;
+    --secondary-color: #64b5f6;
+    --background-color: #f2f2f2;
+  }
+  
+  /* Form styles */
+  .formPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px var(--secondary-color);
+    background-color: var(--background-color);
+    max-width: 500px;
+  }
+  
+  .formPanel h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+  .formPanel h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+  
+  .formPanel label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+  }
+  
+  .formPanel input[type="text"],
+  .formPanel input[type="email"],
+  .formPanel input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px var(--secondary-color);
+  }
+  
+  .formPanel input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .formPanel input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+  }
+  
