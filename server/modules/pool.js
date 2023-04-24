@@ -30,7 +30,7 @@ else {
     host: 'localhost',
     port: 5432,
     database: 'prime_app', // 	💥 Change this to the name of your database!
-    password: '1245',  
+    password: '   ', // 3 spaces  
   })
 }
 
