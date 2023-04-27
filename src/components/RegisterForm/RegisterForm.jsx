@@ -28,6 +28,8 @@ function RegisterForm() {
         confirm_password: confirmPassword,
       },
     });
+    console.log("Fronted says hi to", username, firstName, lastName, email, password, confirmPassword)
+
   };
 
   return (

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import FetchWallet from "../FetchWallet/FetchWallet";
 
 function Wallet() {
+  
+  
   const [cardType, setCardType] = useState("");
   const [accountNumber,setAccountNumber] = useState("");
   const [expirationDate, setExpirationDate] = useState("");
@@ -33,9 +36,10 @@ function Wallet() {
   
 
   return (
+    < div className="" >
     <div className="formContainer">
       <form onSubmit={handleSubmit} className="formPanel">
-        <h2>Add Bank Details</h2>
+        <h2>Add Bank Details </h2>
 
         <label htmlFor="cardType">Card Type</label>
         <select id="cardType"
@@ -94,7 +98,11 @@ function Wallet() {
         <input type="submit" value="Submit" />
       </form>
     </div>
+    <FetchWallet/>
+    </div>
+
   );
 }
+
 
 export default Wallet;

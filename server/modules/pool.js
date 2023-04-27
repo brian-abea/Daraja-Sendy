@@ -24,15 +24,28 @@ if (process.env.DATABASE_URL) {
 // When we're running this app on our own computer
 // we'll connect to the postgres database that is
 // also running on our computer (localhost)
+// else {
+//   pool = new pg.Pool({
+//     user: 'postgres',
+//     host: 'localhost',
+//     port: 5432,
+//     database: 'prime_app', // 	💥 Change this to the name of your database!
+//     password: '   ',  // 3 spaces
+//   })
+// }
+
+
 else {
   pool = new pg.Pool({
     user: 'postgres',
     host: 'localhost',
     port: 5432,
     database: 'prime_app', // 	💥 Change this to the name of your database!
-    password: '   ', // 3 spaces  
+    password: '   ', // 3 spaces
   })
 }
+
+
 
 module.exports = pool
 
