@@ -28,6 +28,10 @@ function Nav() {
               Home
             </Link>
 
+            <Link className="navLink" to="/dashboard">
+              Dashboard
+            </Link>
+
             <Link className="navLink" to="/wallet">
               Wallet
             </Link>

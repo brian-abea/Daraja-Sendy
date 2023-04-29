@@ -8,10 +8,9 @@ import './UserPage.css';
 function UserPage() {
   const user = useSelector((store) => store.user);
   return (
-
     <div className="container">
       <div>
-      <h2>Welcome, {user.username}!</h2>
+        <h2>Welcome, {user.username}!</h2>
       </div>
       <div className="balance-container">
         <div className="balance">
