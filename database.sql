@@ -28,3 +28,12 @@ CREATE TABLE bank_details (
  expiration_date VARCHAR(4) NOT NULL,
  billing_address VARCHAR(255) NOT NULL
 );
+
+-- USER wallet DATABASE
+CREATE TABLE wallet(
+id SERIAL PRIMARY KEY,
+ name TEXT NOT NULL,
+ accountNumber VARCHAR (50) NOT NULL,
+ description TEXT NOT NULL,
+ priority INTEGER NOT NULL
+);

@@ -11,6 +11,7 @@ const passport = require('./strategies/user.strategy');
 const userRouter = require('./routes/user.router');
 const walletRouter = require('./routes/wallet.router');
 const fetchwalletRouter = require('./routes/fetchwallet.route');
+const createWalletRouter = require('./routes/CreateWallet.router');
 
 
 // Body parser middleware
@@ -28,6 +29,7 @@ app.use(passport.session());
 app.use('/api/user', userRouter);
 app.use('/api/wallet', walletRouter);
 app.use('/api/getwallet', fetchwalletRouter);
+app.use('/api/createwallet', createWalletRouter);
 
 
 // Serve static files
